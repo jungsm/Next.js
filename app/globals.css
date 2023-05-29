@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(210, 214, 218);
+}
+.title{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15rem;
+}
+.title-sub{
+  font-size: 16px;
+  text-align: center;
+}
