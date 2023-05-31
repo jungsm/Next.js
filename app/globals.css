@@ -44,3 +44,8 @@ body{
   border-bottom: 1px solid grey;
   line-height: 0px;
 } 
+.red-button{
+  width: 5rem;
+  background-color: red;
+  color: white;
+}
