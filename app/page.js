@@ -1,15 +1,14 @@
-import Link from "next/link"
+import { MongoClient } from "mongodb"
+import { connectDB } from "../util/database"
 
-export default function Home() {
-  let name = '프로젝트'
+export default async function Home() {
+
+const db = (await connectDB).db("forum")
+let result = await db.collection('post').find().toArray()
   return (
     <div>
-      <div className="navbar">
-        <Link href="/">홈</Link>
-        <Link href="/list">List</Link>
-      </div>
-      <div className="title">정선문</div>
-      <h4 className="title-sub">next.js {name}</h4>
+
     </div>
+
   )
 }

@@ -12,6 +12,18 @@ yarn dev
 pnpm dev
 ```
 
+
+mongoDB
+비관계형 DB
+쉬운편 초심자 분산처리빠름
+
+
+게시판 기능
+
+글목록 조회기능
+상세페이지
+글발행기능
+수정삭제기능
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
