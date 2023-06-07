@@ -9,7 +9,8 @@ export default async function handler(요청,응답){
            
             let db = (await connectDB).db("forum");
             let result = await db.collection('post').updateOne({_id :new ObjectId(요청.body._id)},{$set: article})
-            응답.redirect(302,'/list')   
+            응답.writeHead(302, { Location: '/list' });
+            응답.end(); 
         } catch (error) {
             응답.status(500).json("에러가 발생했습니다.")
         }
